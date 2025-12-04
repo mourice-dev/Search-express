@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Search Page</title>
+  </head>
+  <body>
+    <h1>Search Products</h1>
+
+    <!-- This form handles creating the URL -->
+    <form action="/api/search" method="GET">
+      <label for="searchQuery">Enter search term:</label>
+      <input
+        type="text"
+        id="searchQuery"
+        name="query"
+        placeholder="e.g., laptop" />
+      <button type="submit">Search</button>
+    </form>
+
+    <form role="search">
+      <label for="search-input" class="visually-hidden">Search products</label>
+      <input type="text" placeholder="Search..." id="search-input" />
+      <button type="submit">Search</button>
+    </form>
+
+    
+  </body>
+</html>
